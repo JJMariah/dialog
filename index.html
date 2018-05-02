@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--去掉iphone手机的手机号码识别-->
+    <meta name = "format-detection" content = "telephone=no">
     <title>仿抖音评论区移动端弹出框</title>
     <link rel="stylesheet" href="./src/fonts/iconfont.css">
     <link rel="stylesheet" href="./src/slider-down-to-up.css">
@@ -11,14 +13,8 @@
 <body>
 <div class="content">
     <div style="margin: 50px 20px">
-        <button id="comment-show-btn">查看评论</button>
+        <button id="comment-show-btn">戳这里查看评论</button>
         <ul>
-            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam deserunt dolore eligendi, est et fuga inventore molestiae mollitia natus quaerat quas quis reiciendis repellat sequi sint sit temporibus vitae voluptatum!</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam deserunt dolore eligendi, est et fuga inventore molestiae mollitia natus quaerat quas quis reiciendis repellat sequi sint sit temporibus vitae voluptatum!</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam deserunt dolore eligendi, est et fuga inventore molestiae mollitia natus quaerat quas quis reiciendis repellat sequi sint sit temporibus vitae voluptatum!</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam deserunt dolore eligendi, est et fuga inventore molestiae mollitia natus quaerat quas quis reiciendis repellat sequi sint sit temporibus vitae voluptatum!</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam deserunt dolore eligendi, est et fuga inventore molestiae mollitia natus quaerat quas quis reiciendis repellat sequi sint sit temporibus vitae voluptatum!</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam deserunt dolore eligendi, est et fuga inventore molestiae mollitia natus quaerat quas quis reiciendis repellat sequi sint sit temporibus vitae voluptatum!</li>
             <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam deserunt dolore eligendi, est et fuga inventore molestiae mollitia natus quaerat quas quis reiciendis repellat sequi sint sit temporibus vitae voluptatum!</li>
             <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam deserunt dolore eligendi, est et fuga inventore molestiae mollitia natus quaerat quas quis reiciendis repellat sequi sint sit temporibus vitae voluptatum!</li>
         </ul>
@@ -34,9 +30,49 @@
                             <ul class="comment">
                                 <li class="detail">
                                     <ul>
-                                        <li class="name">手机用户号</li>
-                                        <li class="comments">Html中CSS之去除li前面的小黑点,和ul、LI部分属性方法 - CSDN博客</li>
+                                        <li class="name">非主流教主</li>
+                                        <li class="comments">老铁没毛病</li>
+                                        <li class="time">3天前</li>
+                                    </ul>
+                                </li>
+                                <li class="like">
+                                    <ul>
+                                        <li class="heart"><span class="iconfont icon-like_fill"></span></li>
+                                        <li class="like-count">1</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </ul>
+                    </li>
+                    <li class="comment-item">
+                        <ul class="comment-detail">
+                            <li class="avatar"><img src="src/imgs/avatar.jpg" width="100%"></li>
+                            <ul class="comment">
+                                <li class="detail">
+                                    <ul>
+                                        <li class="name">手机用户号13755669988</li>
+                                        <li class="comments">小生不才，未得姑娘青睐，扰姑娘良久，姑娘勿怪，自此所有爱慕之意止于唇齿，匿与年华，姑娘往南走，小生往北瞧，不再打扰姑娘，今生就此别过，望姑娘日后善其身，遇良人予君欢喜城，暖色浮余生。</li>
                                         <li class="time">1小时前</li>
+                                    </ul>
+                                </li>
+                                <li class="like">
+                                    <ul>
+                                        <li class="heart"><span class="iconfont icon-like_fill"></span></li>
+                                        <li class="like-count">105</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </ul>
+                    </li>
+                    <li class="comment-item">
+                        <ul class="comment-detail">
+                            <li class="avatar"><img src="src/imgs/avatar.jpg" width="100%"></li>
+                            <ul class="comment">
+                                <li class="detail">
+                                    <ul>
+                                        <li class="name">安徽金城武</li>
+                                        <li class="comments">姑娘有罪，罪在你一颦一笑住我眉头心间。一行一止牵我情丝心绪，姑娘，你可知!</li>
+                                        <li class="time">3分钟前</li>
                                     </ul>
                                 </li>
                                 <li class="like">
@@ -54,141 +90,25 @@
                             <ul class="comment">
                                 <li class="detail">
                                     <ul>
-                                        <li class="name">手机用户号111111111100</li>
-                                        <li class="comments">Html中CSS之去除li前面的小黑点,和ul、LI部分属性方法 - CSDN博客</li>
+                                        <li class="name">安徽金城武</li>
+                                        <li class="comments">喂 你要不要跟我走啊 我会把情书给你 不眠的夜给你 四月的清晨给你 雪糕的第一口给你 一腔孤勇和余生八十年 全都给你。</li>
                                         <li class="time">1小时前</li>
                                     </ul>
                                 </li>
                                 <li class="like">
                                     <ul>
                                         <li class="heart"><span class="iconfont icon-like_fill"></span></li>
-                                        <li class="like-count">1000</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </ul>
-                    </li>
-                    <li class="comment-item">
-                        <ul class="comment-detail">
-                            <li class="avatar"><img src="src/imgs/avatar.jpg" width="100%"></li>
-                            <ul class="comment">
-                                <li class="detail">
-                                    <ul>
-                                        <li class="name">手机用户号111111111100</li>
-                                        <li class="comments">Html中CSS之去除li前面的小黑点,和ul、LI部分属性方法 - CSDN博客</li>
-                                        <li class="time">1小时前</li>
-                                    </ul>
-                                </li>
-                                <li class="like">
-                                    <ul>
-                                        <li class="heart"><span class="iconfont icon-like_fill"></span></li>
-                                        <li class="like-count">1000</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </ul>
-                    </li>
-                    <li class="comment-item">
-                        <ul class="comment-detail">
-                            <li class="avatar"><img src="src/imgs/avatar.jpg" width="100%"></li>
-                            <ul class="comment">
-                                <li class="detail">
-                                    <ul>
-                                        <li class="name">手机用户号111111111100</li>
-                                        <li class="comments">Html中CSS之去除li前面的小黑点,和ul、LI部分属性方法 - CSDN博客</li>
-                                        <li class="time">1小时前</li>
-                                    </ul>
-                                </li>
-                                <li class="like">
-                                    <ul>
-                                        <li class="heart"><span class="iconfont icon-like_fill"></span></li>
-                                        <li class="like-count">1000</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </ul>
-                    </li>
-                    <li class="comment-item">
-                        <ul class="comment-detail">
-                            <li class="avatar"><img src="src/imgs/avatar.jpg" width="100%"></li>
-                            <ul class="comment">
-                                <li class="detail">
-                                    <ul>
-                                        <li class="name">手机用户号111111111100</li>
-                                        <li class="comments">Html中CSS之去除li前面的小黑点,和ul、LI部分属性方法 - CSDN博客</li>
-                                        <li class="time">1小时前</li>
-                                    </ul>
-                                </li>
-                                <li class="like">
-                                    <ul>
-                                        <li class="heart"><span class="iconfont icon-like_fill"></span></li>
-                                        <li class="like-count">1000</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </ul>
-                    </li>
-                    <li class="comment-item">
-                        <ul class="comment-detail">
-                            <li class="avatar"><img src="src/imgs/avatar.jpg" width="100%"></li>
-                            <ul class="comment">
-                                <li class="detail">
-                                    <ul>
-                                        <li class="name">手机用户号111111111100</li>
-                                        <li class="comments">Html中CSS之去除li前面的小黑点,和ul、LI部分属性方法 - CSDN博客</li>
-                                        <li class="time">1小时前</li>
-                                    </ul>
-                                </li>
-                                <li class="like">
-                                    <ul>
-                                        <li class="heart"><span class="iconfont icon-like_fill"></span></li>
-                                        <li class="like-count">1000</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </ul>
-                    </li>
-                    <li class="comment-item">
-                        <ul class="comment-detail">
-                            <li class="avatar"><img src="src/imgs/avatar.jpg" width="100%"></li>
-                            <ul class="comment">
-                                <li class="detail">
-                                    <ul>
-                                        <li class="name">手机用户号111111111100</li>
-                                        <li class="comments">Html中CSS之去除li前面的小黑点,和ul、LI部分属性方法 - CSDN博客</li>
-                                        <li class="time">1小时前</li>
-                                    </ul>
-                                </li>
-                                <li class="like">
-                                    <ul>
-                                        <li class="heart"><span class="iconfont icon-like_fill"></span></li>
-                                        <li class="like-count">1000</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </ul>
-                    </li>
-                    <li class="comment-item">
-                        <ul class="comment-detail">
-                            <li class="avatar"><img src="src/imgs/avatar.jpg" width="100%"></li>
-                            <ul class="comment">
-                                <li class="detail">
-                                    <ul>
-                                        <li class="name">手机用户号111111111100</li>
-                                        <li class="comments">Html中CSS之去除li前面的小黑点,和ul、LI部分属性方法 - CSDN博客</li>
-                                        <li class="time">1小时前</li>
-                                    </ul>
-                                </li>
-                                <li class="like">
-                                    <ul>
-                                        <li class="heart"><span class="iconfont icon-like_fill"></span></li>
-                                        <li class="like-count">1000</li>
+                                        <li class="like-count">3</li>
                                     </ul>
                                 </li>
                             </ul>
                         </ul>
                     </li>
                 </ul>
+            </div>
+            <div class="write-comment">
+                <textarea rows="1" cols="20" name="comment" placeholder="有爱评论，说点好听的~"></textarea>
+                <span class="iconfont icon-eit"></span>
             </div>
         </div>
     </div>

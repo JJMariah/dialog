@@ -49,7 +49,7 @@ gulp.task('default', ['webserver']);
 
 > 移动端在同一局域网下，输入http://192.168.1.109:8080即可访问
 
-### 样式我选择了less
+### 样式选择了less
 
 > npm i gulp-less -D
 
@@ -57,14 +57,21 @@ gulp.task('default', ['webserver']);
 
 ``` javascript
 
-gulp.task('less',function () {
+gulp.task('less2css', function () {
     gulp.src('src/*.less')
         .pipe(less())
         .pipe(gulp.dest('src'))
 })
 
-```
+// 监听less文件变化，随时执行less任务
+gulp.task('lessAuto2css', function () {
+    gulp.watch('src/*.less', ['less2css'])
+})
 
+```
+> npm i gulp-autoprefixer -D
+
+根据不同的浏览器添加前缀
 
 ### 使用flex布局
 

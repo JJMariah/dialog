@@ -35,10 +35,10 @@ ul li {
     .common;
     .slider-content {
       height: 100%;
-      overflow:auto;
+      overflow: auto;
       -webkit-overflow-scrolling: touch;
       .comment-list {
-        padding: 0 10px;
+        padding: 0 10px 52px 10px;
         .comment-item {
           padding: 5px 0;
           .comment-detail {
@@ -47,7 +47,7 @@ ul li {
             color: #d6d6d6;
             .avatar {
               vertical-align: top;
-              padding: 10px 5px;
+              padding: 10px 5px 10px 0;
               width: 30px;
               height: 30px;
               img {
@@ -68,6 +68,7 @@ ul li {
                   color: rgba(255, 255, 255, 0.5);
                 }
                 .comments {
+                  text-align: justify;
                   font-size: 14px;
                   color: #fff;
                 }
@@ -90,6 +91,36 @@ ul li {
             }
           }
         }
+      }
+    }
+    // 写下评论
+    .write-comment {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 3;
+      text-align: center;
+      height: 52px;
+      textarea {
+        box-sizing: border-box;
+        resize: none;
+        width: 100%;
+        padding: 18px 38px 18px 10px;
+        outline: none;
+        border: none;
+        font-size: 14px;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.8);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+      .icon-eit {
+        position: absolute;
+        right: 10px;
+        top: 11px;
+        font-size: 28px;
+        color: rgba(255, 255, 255, 0.5);
       }
     }
   }
